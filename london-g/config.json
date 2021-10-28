@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "SBV, IC, DP"
+  },
+  "text": {
+    "more": "A Network graph that fits the following criteria:\n     Hosts with multi-listings that are greater than or equal to five\n     Reviewers who reviewed multiple hosts (greater than two)\n     Hosts and reviewers where the reviewers left multiple reviews for a host",
+    "intro": "A graph of the London aribnb network that fits our criteria for our final project",
+    "title": "London-G-Graph"
+  },
+  "legend": {
+    "edgeLabel": "Reviewers that have reviewed hosts",
+    "colorLabel": "Blue: Hosts \u0026 Red: Reviewers",
+    "nodeLabel": "Hosts and Reviewers"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
