@@ -1,0 +1,97 @@
+
+<body>
+
+<h1>DATA 608: Module 5</h1>
+
+<h2>Question 1: Reversing a word</h2>
+
+<script type="text/javascript">
+
+document.write('<p>Enter a word to reverse: ')
+
+function reverse(){
+  let string = document.getElementById('target');
+  string.innerHTML = document.getElementById('word').value.split("").reverse().join("");
+}
+
+</script>
+<p>
+<form>
+    <input id="word" type="text">
+    <input type="button" value="Reverse" onClick="reverse();">
+</form>
+</p>
+
+<div id="target"> </div>
+
+<h2>Question 2: Table of multiples</h2>
+
+<script type="text/javascript">
+
+document.write('<p>Enter a number: ')
+
+// Functions
+function multiples(num){
+	let arr=[]
+	for (let i = 1; i<=20; ++i)
+		arr.push(num*i);
+	let table = 
+		'<table>\
+			<tr>\
+				<th>Column 1</th>\
+				<th>Column 2</th>\
+				<th>Column 3</th>\
+				<th>Column 4</th>\
+			</tr>\
+			<tr>\
+				<td>'+arr[0]+'</td>\
+				<td>'+arr[1]+'</td>\
+				<td>'+arr[2]+'</td>\
+				<td>'+arr[3]+'</td>\
+			</tr>\
+			<tr>\
+				<td>'+arr[4]+'</td>\
+				<td>'+arr[5]+'</td>\
+				<td>'+arr[6]+'</td>\
+				<td>'+arr[7]+'</td>\
+			</tr>\
+			<tr>\
+				<td>'+arr[8]+'</td>\
+				<td>'+arr[9]+'</td>\
+				<td>'+arr[10]+'</td>\
+				<td>'+arr[11]+'</td>\
+			</tr>\
+			<tr>\
+				<td>'+arr[12]+'</td>\
+				<td>'+arr[13]+'</td>\
+				<td>'+arr[14]+'</td>\
+				<td>'+arr[15]+'</td>\
+			</tr>\
+			<tr>\
+				<td>'+arr[16]+'</td>\
+				<td>'+arr[17]+'</td>\
+				<td>'+arr[18]+'</td>\
+				<td>'+arr[19]+'</td>\
+			</tr>\
+		</table>'
+	return table;
+}
+
+function tableview(){
+	let num = document.getElementById('table');
+	num.innerHTML = multiples(document.getElementById('num').value);
+}
+
+</script>
+
+<p>
+<form>
+    <input id="num" type="number" size="4">
+    <input type="button" value="Multiply" onClick="tableview();">
+</form>
+</p>
+
+<table id="table"></table>
+
+</body>
+</html>
