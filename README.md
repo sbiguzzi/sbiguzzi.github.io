@@ -7,5 +7,5 @@ All work from CUNY MSDS I want to show.
 
 ### Data 608
 [Module 5 Part 1](https://sbiguzzi.github.io/data608-hw5-1.html)  
-[Module 5 Part 2](https://sbiguzzi.github.io/HW5.2/data608-h5-2.html)  
+[Module 5 Part 2](https://sbiguzzi.github.io/HW5.2/data608-hw5-2.html)  
 
