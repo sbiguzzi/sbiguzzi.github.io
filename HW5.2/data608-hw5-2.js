@@ -33,8 +33,8 @@ Plotly.d3.csv('https://raw.githubusercontent.com/sbiguzzi/data608/main/HW5/presi
 		rows.forEach(function(d){
 			if (d['Name']==pres){
 				cellValues.push(d['Name'])
-				cellValues.push(d['Height'])
-				cellValues.push(d['Weight'])
+				cellValues.push(d['Height']+' in')
+				cellValues.push(d['Weight']+' lbs')
 			}
 		});
 		
